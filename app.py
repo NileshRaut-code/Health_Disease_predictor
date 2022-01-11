@@ -120,7 +120,7 @@ def predict_heart():
             to_predict_list = list(to_predict_list.values())
             to_predict_list = list(map(float, to_predict_list))
             size=11
-            loaded_model = joblib.load('models/heart_model')
+            loaded_model = joblib.load('Models/heart_model')
             to_predict = np.array(to_predict_list).reshape(1, size)
             result = loaded_model.predict(to_predict)
             
